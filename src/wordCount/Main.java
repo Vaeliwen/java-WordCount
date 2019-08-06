@@ -1,5 +1,6 @@
 package wordCount;
 
+<<<<<<< HEAD
 import java.util.*;
 
 public class Main {
@@ -64,5 +65,11 @@ public class Main {
         System.out.println(top50);
         System.out.println(top50.size());
 
+=======
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+>>>>>>> 55d9218cc693610b970a41ffcec58904c5515c22
     }
 }

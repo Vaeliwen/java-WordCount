@@ -1,4 +1,4 @@
-package com.company;
+package wordCount;
 
 public class Main {
 

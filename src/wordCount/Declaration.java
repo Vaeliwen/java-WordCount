@@ -8,8 +8,8 @@ public class Declaration {
 
     public Declaration(String text){
         this.text = text.toLowerCase();
-        this.cleaned = text.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "");
-        this.words = cleaned.split(" +");
+        cleaned = this.text.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "");
+        words = cleaned.split(" +");
     }
 
     public String getText() {

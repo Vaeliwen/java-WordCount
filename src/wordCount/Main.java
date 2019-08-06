@@ -1,6 +1,5 @@
 package wordCount;
 
-<<<<<<< HEAD
 import java.util.*;
 
 public class Main {
@@ -13,10 +12,10 @@ public class Main {
 
         Collections.sort(rightsArrayList, new Comparator<String>() {
 
-                public int compare (String o1, String o2) {
-                    return o1.compareToIgnoreCase(o2);
+                    public int compare(String o1, String o2) {
+                        return o1.compareToIgnoreCase(o2);
+                    }
                 }
-            }
         );
         HashMap<String, Integer> frequencyHash = new HashMap<String, Integer>();
         HashMap<Integer, String> rightsHashMap = new HashMap<Integer, String>();
@@ -26,7 +25,7 @@ public class Main {
         String lastWord = "";
 
         for (String s : rightsArrayList) {
-            if (s.equals(lastWord)){
+            if (s.equals(lastWord)) {
                 frequency++;
                 frequencyHash.put(s, frequency);
             } else {
@@ -43,8 +42,8 @@ public class Main {
         ArrayList<HashMap.Entry<String, Integer>> sortedFrequency = new ArrayList<HashMap.Entry<String, Integer>>();
         sortedFrequency.addAll(frequencyHash.entrySet());
 
-        Collections.sort(sortedFrequency, new Comparator<HashMap.Entry<String, Integer>>(){
-            public int compare (HashMap.Entry<String, Integer> o1, HashMap.Entry<String, Integer> o2){
+        Collections.sort(sortedFrequency, new Comparator<HashMap.Entry<String, Integer>>() {
+            public int compare(HashMap.Entry<String, Integer> o1, HashMap.Entry<String, Integer> o2) {
                 return o2.getValue() - o1.getValue();
             }
         });
@@ -56,7 +55,7 @@ public class Main {
         }
 
         Collections.sort(top50, new Comparator<HashMap.Entry<String, Integer>>() {
-            public int compare (HashMap.Entry<String, Integer> o1, HashMap.Entry<String, Integer> o2){
+            public int compare(HashMap.Entry<String, Integer> o1, HashMap.Entry<String, Integer> o2) {
                 return o1.getKey().compareToIgnoreCase(o2.getKey());
             }
         });
@@ -64,12 +63,5 @@ public class Main {
         System.out.println(sortedFrequency);
         System.out.println(top50);
         System.out.println(top50.size());
-
-=======
-public class Main {
-
-    public static void main(String[] args) {
-	// write your code here
->>>>>>> 55d9218cc693610b970a41ffcec58904c5515c22
     }
 }
